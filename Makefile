@@ -1,7 +1,7 @@
 CC: cc
 CFLAGS: -Wall -Wextra -Werror
 
-NAME: ft_printf
+NAME: libftprintf.a
 
 $(NAME): all
 
@@ -12,5 +12,7 @@ clean:
 fclean: 
 
 re: 
+
+bonus: 
 
 .PHONY: all clean fclean re
