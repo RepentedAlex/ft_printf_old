@@ -15,7 +15,7 @@ int	main(void)
 	//Test print une variable string
 	ft_printf("Test string variable: %s\n", str);
 	//Test print l'adresse sur laquelle pointe un pointeur
-	//ft_printf("Test pointer's address: %p\n", str);
+	ft_printf("Test pointer's address: %p\n", str);
 	//Test print une variable int
 	ft_printf("Test decimal variable: %d\n", number);
 	//Test print une variable unsigned int
