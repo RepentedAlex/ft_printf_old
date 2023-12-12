@@ -12,7 +12,19 @@
 
 #include "ft_printf.h"
 
-void	ft_print_number(int num, char *base)
+void	ft_print_number(int num, int base_value, char *base)
 {
-	ft_putnbr(num, base);
+	int	sign;
+
+	sign = 1;
+	if (num < 0)
+	{
+		sign *= -1;
+		ft_print_number(num * sign, base_value, base);
+		write(1, "-", 1);
+	}
+	if (num > base_value)
+		ft_print_number(num / base_value, base_value, base);
+	if (num < base_value && num >= 0)
+		write(1, &base[num % base_value], 1);
 }

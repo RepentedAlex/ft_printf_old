@@ -18,10 +18,10 @@ int	ft_print_format(char c, va_list args)
 		ft_print_char(va_arg(args, int));
 	if (c == 's')
 		ft_print_string(va_arg(args, char *));
-	if (c == 'p')
-		ft_print_pointer(va_arg(args, int)); // <- PAS FAIT
+//	if (c == 'p')
+//		ft_print_pointer(va_arg(args, int)); // <- PAS FAIT
 	if (c == 'd')
-		ft_print_number(va_arg(args, int), "0123456789");
+		ft_print_number(va_arg(args, int), 10, "0123456789");
 	return (0);
 }
 

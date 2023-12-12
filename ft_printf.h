@@ -10,7 +10,7 @@ int		ft_printf(const char *,...);
 int		ft_print_format(char c, va_list args);
 
 void	ft_print_char(int c);
-void	ft_print_number(int num, char *base);
+void	ft_print_number(int num, int base_value, char *base);
 void	ft_print_pointer(int address);
 void	ft_print_string(char *str);
 void	ft_putchar(char c);
